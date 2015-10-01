@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DBMetaData driverMajorVersion="9" driverMinorVersion="4" driverVersion="PostgreSQL 9.4 JDBC4 (build 1203)" productVersion="9.4.4" identifierQuoteString="&quot;" transactionLevel="Read Committed" driverName="PostgreSQL Native Driver" productName="PostgreSQL">
+  <Schema name="information_schema"/>
+  <Schema name="pg_catalog"/>
+  <Schema name="public"/>
+</DBMetaData>
