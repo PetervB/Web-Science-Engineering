@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Warnings> 
-  <Warning xpath="id('sv1#lgu5')" rootXPath="id('sv1')" error="false" label="Login" key="NO_OUTGOING_OK_LINKS"> 
-    <Message>No outgoing OK flow(s) for the operation 'Login'</Message> 
+  <Warning xpath="id('sv3#lou2')" rootXPath="id('sv3')" error="false" label="Logout requester" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Logout requester'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv3#cru2')" rootXPath="id('sv3')" error="false" label="Create Campaign" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Create Campaign'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv3#cru2')" rootXPath="id('sv3')" error="false" label="Create Campaign" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Create Campaign'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv3#area2#page5#enu3')" rootXPath="id('sv3')" key="MISSING_MANDATORY_OUTPUT_PARAMETER" label="Create campaign"> 
+    <Message>The mandatory output parameter 'Open' is not transported along an outgoing flow from the component 'Create campaign'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv3#area2#page4#pwu1')" rootXPath="id('sv3')" key="NO_DISPLAY_ATTRIBUTES" label="Campaigns"> 
+    <Message>No attributes to display are specified for the component 'Campaigns'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv3#area2#page4#pwu1')" rootXPath="id('sv3')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Campaigns"> 
+    <Message>Sorting attribute are unspecified for the component 'Campaigns'</Message> 
   </Warning> 
 </Warnings>

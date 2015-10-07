@@ -1,27 +1,28 @@
-[07 Oct 2015 10:45:49] DEBUG Executing SQL script
-[07 Oct 2015 10:45:49] INFO ================================================================================
-[07 Oct 2015 10:45:49] INFO onError= 'stop'
-[07 Oct 2015 10:45:49] INFO autoCommit= 'false'
-[07 Oct 2015 10:45:49] INFO username= 'postgres'
-[07 Oct 2015 10:45:49] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.9.x64bit\repository\Web-Science-Engineering\.Temp~\UpdateSQL.xml'
-[07 Oct 2015 10:45:49] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.9.x64bit\repository\Web-Science-Engineering\.Temp~\UpdateSQL.xml.log'
-[07 Oct 2015 10:45:49] INFO encoding= ''
-[07 Oct 2015 10:45:49] INFO driverClass= 'org.postgresql.Driver'
-[07 Oct 2015 10:45:49] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.9.x64bit\repository\Web-Science-Engineering\.Temp~\UpdateSQL.sql'
-[07 Oct 2015 10:45:49] INFO eventSocketPort= '56643'
-[07 Oct 2015 10:45:49] INFO statementSeparator= ';'
-[07 Oct 2015 10:45:49] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.9.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[07 Oct 2015 10:45:49] INFO password= 'Arend123'
-[07 Oct 2015 10:45:49] INFO url= 'jdbc:postgresql://localhost:5432/ImageAnnotationTool'
-[07 Oct 2015 10:45:49] INFO ================================================================================
-[07 Oct 2015 10:45:49] INFO Connecting to the Database...
-[07 Oct 2015 10:45:49] INFO Database connection estabilished
-[07 Oct 2015 10:45:49] INFO transaction isolation: 2
-[07 Oct 2015 10:45:49] DEBUG ================================================================================
-[07 Oct 2015 10:45:49] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.9.x64bit\repository\Web-Science-Engineering\.Temp~\UpdateSQL.sql
-[07 Oct 2015 10:45:49] DEBUG Executing statement:  create table "public"."requester" ( "user_oid"  int4  not null, "name"  varchar(255), "birthdate"  date, primary key ("user_oid") )
-[07 Oct 2015 10:45:49] DEBUG Executing statement:    alter table "public"."requester"   add constraint fk_requester_user foreign key ("user_oid") references "public"."user" ("oid")
-[07 Oct 2015 10:45:49] DEBUG ================================================================================
-[07 Oct 2015 10:45:49] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[07 Oct 2015 10:45:50] INFO Database connection closed
-[07 Oct 2015 10:45:50] DEBUG Total time: 953 milliseconds
+[07 Oct 2015 13:40:08] DEBUG Executing SQL script
+[07 Oct 2015 13:40:08] INFO ================================================================================
+[07 Oct 2015 13:40:08] INFO onError= 'stop'
+[07 Oct 2015 13:40:08] INFO autoCommit= 'false'
+[07 Oct 2015 13:40:08] INFO username= 'postgres'
+[07 Oct 2015 13:40:08] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.9.x64bit\repository\Web-Science-Engineering\.Temp~\UpdateSQL.xml'
+[07 Oct 2015 13:40:08] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.9.x64bit\repository\Web-Science-Engineering\.Temp~\UpdateSQL.xml.log'
+[07 Oct 2015 13:40:08] INFO encoding= ''
+[07 Oct 2015 13:40:08] INFO driverClass= 'org.postgresql.Driver'
+[07 Oct 2015 13:40:08] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.9.x64bit\repository\Web-Science-Engineering\.Temp~\UpdateSQL.sql'
+[07 Oct 2015 13:40:08] INFO eventSocketPort= '52767'
+[07 Oct 2015 13:40:08] INFO statementSeparator= ';'
+[07 Oct 2015 13:40:08] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.9.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[07 Oct 2015 13:40:08] INFO password= 'Arend123'
+[07 Oct 2015 13:40:08] INFO url= 'jdbc:postgresql://localhost:5432/ImageAnnotationTool'
+[07 Oct 2015 13:40:08] INFO ================================================================================
+[07 Oct 2015 13:40:08] INFO Connecting to the Database...
+[07 Oct 2015 13:40:08] INFO Database connection estabilished
+[07 Oct 2015 13:40:08] INFO transaction isolation: 2
+[07 Oct 2015 13:40:08] DEBUG ================================================================================
+[07 Oct 2015 13:40:08] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.9.x64bit\repository\Web-Science-Engineering\.Temp~\UpdateSQL.sql
+[07 Oct 2015 13:40:08] DEBUG Executing statement:  create table "public"."campaign" ( "oid"  int4  not null, "name"  varchar(255), "budget"  numeric(19, 2), "status"  bool, primary key ("oid") )
+[07 Oct 2015 13:40:08] DEBUG Executing statement:    alter table "public"."campaign"  add column  "requester_oid"  int4
+[07 Oct 2015 13:40:08] DEBUG Executing statement:  alter table "public"."campaign"   add constraint fk_campaign_requester foreign key ("requester_oid") references "public"."requester" ("user_oid")
+[07 Oct 2015 13:40:08] DEBUG ================================================================================
+[07 Oct 2015 13:40:08] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[07 Oct 2015 13:40:08] INFO Database connection closed
+[07 Oct 2015 13:40:08] DEBUG Total time: 610 milliseconds

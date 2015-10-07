@@ -1,7 +1,7 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page2" name="Worker details" landmark="false" protected="false" gr:x="0" gr:y="0">
   <ContentUnits>
     <GetUnit id="sv2#area1#page2#gtu2" name="Get Current User" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
-      <Link id="sv2#area1#page2#gtu2#ln1" name="Flow6" to="sv2#area1#page2#dau1" type="transport" validate="true">
+      <Link id="sv2#area1#page2#gtu2#ln1" name="worker details" to="sv2#area1#page2#dau1" type="transport" validate="true">
         <LinkParameter id="sv2#area1#page2#gtu2#ln1#par2" name="UserCtxParam.oid_KeyCondition2 [oid]" source="sv2#area1#page2#gtu2.UserCtxParam" target="sv2#area1#page2#dau1#su1#kcond1.userOID"/>
       </Link>
     </GetUnit>
