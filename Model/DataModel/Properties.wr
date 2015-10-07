@@ -46,14 +46,20 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="ImageAnnotationDatabase" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ImageAnnotationTool" username="postgres" password="Arend123" cryptedPassword="false" connectionCount="5" schema="public">
+  <db:Database id="db1" name="ImageAnnotationDatabase" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ImageAnnotationTool" username="postgres" password="Arend123" connectionCount="5" schema="public">
   </db:Database>
-  <Entity gr:x="35" gr:y="335" id="ent1" name="Worker" duration="persistent" attributeOrder="ent1#att1 ent1#att2 ent1#att3" db:database="db1" db:table="worker">
-    <Attribute id="ent1#att1" key="true" name="oid" type="integer" db:column="oid"/>
+  <Entity gr:x="35" gr:y="335" id="ent1" name="Worker" duration="persistent" attributeOrder="ent1#att2 ent1#att3" db:database="db1" db:table="worker">
     <Attribute id="ent1#att2" name="Name" type="string" db:column="name"/>
     <Generalization superEntity="User">
       <db:JoinColumn attribute="userOID" name="user_oid"/>
     </Generalization>
     <Attribute id="ent1#att3" name="BirthDate" type="date" db:column="birthdate"/>
+  </Entity>
+  <Entity gr:x="255" gr:y="340" id="ent2" name="Requester" duration="persistent" attributeOrder="ent2#att6 ent2#att7" db:database="db1" db:table="requester">
+    <Generalization superEntity="User">
+      <db:JoinColumn attribute="userOID" name="user_oid"/>
+    </Generalization>
+    <Attribute id="ent2#att6" name="Name" type="string" db:column="name"/>
+    <Attribute id="ent2#att7" name="BirthDate" type="date" db:column="birthdate"/>
   </Entity>
 </DataModel>

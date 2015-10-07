@@ -6,14 +6,14 @@
     <Property name="applicationServer">Tomcat</Property>
     <Property name="cloudDeploy">false</Property>
     <Property name="commonsLibDir">C:\WebRatio\WebRatio Platform 7.2.9.x64bit\WebRatio\plugins\com.webratio.commons.libs_7.2.9.201508150414\lib</Property>
-    <Property name="dbConfigPath">C:\Users\Peter\AppData\Local\Temp\WRDBConfig7254917446232107799.xml</Property>
+    <Property name="dbConfigPath">C:\Users\Peter\AppData\Local\Temp\WRDBConfig7653474158887545385.xml</Property>
     <Property name="defaultEncoding"></Property>
     <Property name="deployCorePluginDir">C:\WebRatio\WebRatio Platform 7.2.9.x64bit\WebRatio\configuration\org.eclipse.osgi\bundles\49\1\.cp</Property>
     <Property name="derbySystemHome">C:\WebRatio\WebRatio Platform 7.2.9.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby</Property>
     <Property name="enterpriseProjectDir"></Property>
-    <Property name="eventSocketPort">52109</Property>
+    <Property name="eventSocketPort">61715</Property>
     <Property name="excludedProjects" type="list"></Property>
-    <Property name="generationTime">201510012159</Property>
+    <Property name="generationTime">201510071120</Property>
     <Property name="helpersPluginDir">C:\WebRatio\WebRatio Platform 7.2.9.x64bit\WebRatio\plugins\com.webratio.generator.helpers_7.2.9.201508150414</Property>
     <Property name="i18nBundleKeysFile" type="file"></Property>
     <Property name="i18nExtraBundleFile" type="file"></Property>
@@ -24,14 +24,14 @@
     <Property name="phases">All</Property>
     <Property name="projectDir">C:\WebRatio\WebRatio Platform 7.2.9.x64bit\repository\Web-Science-Engineering</Property>
     <Property name="projectName">ImageAnnotationTool</Property>
-    <Property name="projectPath">C:\Users\Peter\AppData\Local\Temp\Project1356202286399462253.wr</Property>
+    <Property name="projectPath">C:\Users\Peter\AppData\Local\Temp\Project2167684664747846699.wr</Property>
     <Property name="projectType">WEBPROJECT</Property>
     <Property name="rootModuleName"></Property>
     <Property name="uiPluginDir">C:\WebRatio\WebRatio Platform 7.2.9.x64bit\WebRatio\plugins\com.webratio.ide.ui_7.2.9.201508150414</Property>
     <Property name="webappPluginDir">C:\WebRatio\WebRatio Platform 7.2.9.x64bit\WebRatio\plugins\com.webratio.generator.webapp_7.2.9.201508150414</Property>
     <Property name="wrBuildId">201508150414</Property>
     <Property name="wrGenerateOldValidationRules">false</Property>
-    <Property name="wrModelStatistics">pages=3|units=10</Property>
+    <Property name="wrModelStatistics">pages=3|units=13</Property>
     <Property name="wrVersion">7.2.9</Property>
   </Properties>
   <Plugins>

@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="160" gr:y="55" id="sv1#page1" name="Login">
   <ContentUnits>
-    <EntryUnit gr:x="40" gr:y="75" id="sv1#page1#enu1" name="Worker login" entity="ent1" linkOrder="sv1#page1#enu1#ln5">
+    <EntryUnit gr:x="40" gr:y="75" id="sv1#page1#enu1" name="Login" entity="User" linkOrder="sv1#page1#enu1#ln5">
       <Field id="sv1#page1#enu1#fld1" name="UserName" type="string" modifiable="true"/>
       <Field id="sv1#page1#enu1#fld2" name="Password" type="password" modifiable="true"/>
       <Field id="sv1#page1#enu1#fld3" name="Remember credentials" type="boolean" modifiable="true"/>
