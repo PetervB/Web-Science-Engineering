@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="160" gr:y="55" id="sv1#page1" name="Login">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="160" gr:y="55" id="sv1#page1" name="Login" linkOrder="sv1#page1#ln19 sv1#page1#ln20">
   <ContentUnits>
     <EntryUnit gr:x="40" gr:y="75" id="sv1#page1#enu1" name="Login" entity="User" linkOrder="sv1#page1#enu1#ln5">
       <Field id="sv1#page1#enu1#fld1" name="UserName" type="string" modifiable="true"/>
@@ -65,4 +65,6 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv1#page1#ln19" name="Register Worker" to="sv1#page10" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#page1#ln20" name="Register Requester" to="sv1#page11" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
