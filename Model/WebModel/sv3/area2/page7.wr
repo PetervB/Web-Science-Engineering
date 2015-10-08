@@ -1,7 +1,7 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="190" gr:y="0" id="sv3#area2#page7" name="Campaign overview" linkOrder="sv3#area2#page7#ln10" landmark="true">
   <ContentUnits>
     <PowerIndexUnit gr:x="0" gr:y="0" id="sv3#area2#page7#pwu2" name="Campaigns" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att10 ent4#att11 ent4#att12" linkOrder="sv3#area2#page7#pwu2#ln4">
-      <Link id="sv3#area2#page7#pwu2#ln4" name="Update campaign" to="sv3#area2#page3#enu3" type="normal" validate="true">
+      <Link id="sv3#area2#page7#pwu2#ln4" name="Open/close campaign" to="sv3#area2#page3#enu3" type="normal" validate="true">
         <LinkParameter id="sv3#area2#page7#pwu2#ln4#par19" name="oid_Key Condition [oid]" source="data[].ent4#att9" target="sv3#area2#page3#enu3.ent4#att9"/>
       </Link>
     </PowerIndexUnit>
