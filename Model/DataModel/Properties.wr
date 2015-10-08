@@ -46,7 +46,8 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="ImageAnnotationDatabase" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ImageAnnotationTool" username="postgres" password="Arend123" connectionCount="5" schema="public"/>
+  <db:Database id="db1" name="ImageAnnotationDatabase" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ImageAnnotationTool" username="postgres" password="Arend123" connectionCount="5" schema="public">
+  </db:Database>
   <Entity gr:x="35" gr:y="335" id="ent1" name="Worker" duration="persistent" attributeOrder="ent1#att2 ent1#att3" db:database="db1" db:table="worker">
     <Attribute id="ent1#att2" name="Name" type="string" db:column="name"/>
     <Generalization superEntity="User">
@@ -61,11 +62,11 @@
     <Attribute id="ent2#att6" name="Name" type="string" db:column="name"/>
     <Attribute id="ent2#att7" name="BirthDate" type="date" db:column="birthdate"/>
   </Entity>
-  <Entity gr:x="515" gr:y="350" id="ent4" name="Campaign" duration="persistent" attributeOrder="ent4#att9 ent4#att10 ent4#att11 ent4#att12" db:database="db1" db:table="campaign">
+  <Entity gr:x="515" gr:y="320" id="ent4" name="Campaign" duration="persistent" attributeOrder="ent4#att9 ent4#att10 ent4#att11 ent4#att12" db:database="db1" db:table="campaign">
     <Attribute id="ent4#att9" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent4#att10" name="Name" type="string" db:column="name"/>
     <Attribute id="ent4#att11" name="Budget" type="decimal" db:column="budget"/>
-    <Attribute id="ent4#att12" name="Status" type="boolean" db:column="status"/>
+    <Attribute id="ent4#att12" name="Open" type="boolean" db:column="open"/>
   </Entity>
   <Relationship id="rel2" name="Requester_Campaign" sourceEntity="ent2" targetEntity="ent4" db:database="db1" db:table="campaign">
     <RelationshipRole1 id="rel2#role3" name="RequesterToCampaign" maxCard="N">
