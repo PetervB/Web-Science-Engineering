@@ -1,0 +1,47 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="20" gr:y="180" id="sv3#area2#page6" name="Create task">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv3#area2#page6#enu4" name="Create task" entity="ent3" fieldOrder="sv3#area2#page6#enu4#fld6 sv3#area2#page6#enu4#fld8 sv3#area2#page6#enu4#fld19 sv3#area2#page6#enu4#fld20 sv3#area2#page6#enu4#msfld1 sv3#area2#page6#enu4#sfld1" linkOrder="sv3#area2#page6#enu4#ln7">
+      <Field id="sv3#area2#page6#enu4#fld6" name="Title" type="string" modifiable="true"/>
+      <Field id="sv3#area2#page6#enu4#fld8" name="Description" type="text" modifiable="true"/>
+      <Field id="sv3#area2#page6#enu4#fld19" name="Reward" type="float" modifiable="true"/>
+      <Field id="sv3#area2#page6#enu4#fld20" name="Deadline" type="timestamp" modifiable="true"/>
+      <MultiSelectionField id="sv3#area2#page6#enu4#msfld1" name="Skills" type="string"/>
+      <SelectionField id="sv3#area2#page6#enu4#sfld1" name="Pre-defined workers" type="string"/>
+      <Link id="sv3#area2#page6#enu4#ln7" name="Create Task" to="sv3#cru4" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#page6#enu4#ln7#par30" name="Deadline_Deadline" source="sv3#area2#page6#enu4#fld20" target="sv3#cru4.ent3#att13"/>
+        <LinkParameter id="sv3#area2#page6#enu4#ln7#par31" name="Description_Description" source="sv3#area2#page6#enu4#fld8" target="sv3#cru4.ent3#att5"/>
+        <LinkParameter id="sv3#area2#page6#enu4#ln7#par32" name="Reward_Reward" source="sv3#area2#page6#enu4#fld19" target="sv3#cru4.ent3#att8"/>
+        <LinkParameter id="sv3#area2#page6#enu4#ln7#par33" name="Title_Title" source="sv3#area2#page6#enu4#fld6" target="sv3#cru4.ent3#att4"/>
+        <LinkParameter id="sv3#area2#page6#enu4#ln7#par36" name="Key [oid]_CampaignID" source="sv3#area2#page6#enu4#fld21" target="sv3#cru4.ent3#att15"/>
+        <LinkParameter id="sv3#area2#page6#enu4#ln7#par40" name="Key [oid]_PASSING" source="key.ent3#att1" passing="true"/>
+      </Link>
+      <Field id="sv3#area2#page6#enu4#fld21" name="CampaignID" type="integer" preloaded="true" hidden="true" attribute="ent3#att15"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page6#enu4">
+          <layout:Link link="sv3#area2#page6#enu4#ln7"/>
+          <layout:Field field="sv3#area2#page6#enu4#fld6"/>
+          <layout:Field field="sv3#area2#page6#enu4#fld8"/>
+          <layout:Field field="sv3#area2#page6#enu4#fld19"/>
+          <layout:Field field="sv3#area2#page6#enu4#fld20"/>
+          <layout:Field field="sv3#area2#page6#enu4#msfld1"/>
+          <layout:Field field="sv3#area2#page6#enu4#sfld1"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

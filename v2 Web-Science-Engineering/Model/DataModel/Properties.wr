@@ -46,7 +46,7 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="ImageAnnotationDatabase" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ImageAnnotationTool" username="postgres" password="Arend123" connectionCount="5" schema="public">
+  <db:Database id="db1" name="ImageAnnotationDatabase" type="PostgreSQL 9" url="jdbc:postgresql://localhost:5432/ImageAnnotationTool" username="Hao" connectionCount="5" schema="public">
   </db:Database>
   <Entity gr:x="35" gr:y="335" id="ent1" name="Worker" duration="persistent" attributeOrder="ent1#att2 ent1#att3" db:database="db1" db:table="worker">
     <Attribute id="ent1#att2" name="Name" type="string" db:column="name"/>
@@ -62,11 +62,12 @@
     <Attribute id="ent2#att6" name="Name" type="string" db:column="name"/>
     <Attribute id="ent2#att7" name="BirthDate" type="date" db:column="birthdate"/>
   </Entity>
-  <Entity gr:x="515" gr:y="320" id="ent4" name="Campaign" duration="persistent" attributeOrder="ent4#att9 ent4#att10 ent4#att11 ent4#att12" db:database="db1" db:table="campaign">
+  <Entity gr:x="510" gr:y="280" id="ent4" name="Campaign" duration="persistent" attributeOrder="ent4#att9 ent4#att10 ent4#att11 ent4#att12" db:database="db1" db:table="campaign">
     <Attribute id="ent4#att9" key="true" name="oid" type="integer" db:column="oid"/>
     <Attribute id="ent4#att10" name="Name" type="string" db:column="name"/>
     <Attribute id="ent4#att11" name="Budget" type="decimal" db:column="budget"/>
     <Attribute id="ent4#att12" name="Open" type="boolean" db:column="open"/>
+    <Attribute id="ent4#att14" name="status" db:column="status" type="boolean" key="false"/>
   </Entity>
   <Relationship id="rel2" name="Requester_Campaign" sourceEntity="ent2" targetEntity="ent4" db:database="db1" db:table="campaign">
     <RelationshipRole1 id="rel2#role3" name="RequesterToCampaign" maxCard="N">
@@ -74,6 +75,99 @@
     </RelationshipRole1>
     <RelationshipRole2 id="rel2#role4" name="CampaignToRequester" maxCard="1">
       <db:JoinColumn attribute="ent4#att9" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="720" gr:y="415" id="ent3" name="Task" duration="persistent" attributeOrder="ent3#att1 ent3#att4 ent3#att5 ent3#att8 ent3#att13 ent3#att15 ent3#att16" db:database="db1" db:table="task">
+    <Attribute id="ent3#att1" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent3#att4" name="Title" type="string" db:column="title"/>
+    <Attribute id="ent3#att5" name="Description" type="text" db:column="description"/>
+    <Attribute id="ent3#att8" name="Reward" type="float" db:column="reward"/>
+    <Attribute id="ent3#att13" name="Deadline" type="date" db:column="deadline"/>
+    <Attribute id="ent3#att15" name="CampaignID" type="integer" db:column="campaignid"/>
+    <Attribute id="ent3#att16" name="Status" type="integer" db:column="status"/>
+  </Entity>
+  <Relationship id="rel1" name="Campaign_Task" sourceEntity="ent4" targetEntity="ent3" db:database="db1" db:table="campaign">
+    <RelationshipRole1 id="rel1#role1" name="CampaignToTask" maxCard="1">
+      <db:JoinColumn attribute="ent4#att9" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel1#role2" name="TaskToCampaign" maxCard="N">
+      <db:JoinColumn attribute="ent3#att1" name="task_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="120" gr:y="755" id="ent5" name="Skill" duration="persistent" attributeOrder="ent5#att17 ent5#att18" db:database="db1" db:table="skill">
+    <Attribute id="ent5#att17" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent5#att18" name="Skill Name" type="integer" db:column="skill_name"/>
+  </Entity>
+  <Relationship id="rel3" name="Worker_Skills" sourceEntity="ent1" targetEntity="ent5" db:database="db1" db:table="worker">
+    <RelationshipRole1 id="rel3#role5" name="WorkerToSkills" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="user_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel3#role6" name="SkillsToWorker" maxCard="N">
+      <db:JoinColumn attribute="ent5#att17" name="skill_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel9" name="Task_Skill" sourceEntity="ent3" targetEntity="ent5" db:database="db1" db:table="task" gr:bendpoints="-75,257,355,-38">
+    <RelationshipRole1 id="rel9#role17" name="TaskToSkill" maxCard="1">
+      <db:JoinColumn attribute="ent3#att1" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel9#role18" name="SkillToTask" maxCard="N">
+      <db:JoinColumn attribute="ent5#att17" name="skill_oid_2"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="360" gr:y="445" id="ent7" name="Excecution" duration="persistent" db:database="db1" db:table="excecution" attributeOrder="ent7#att24 ent7#att33 ent7#att34">
+    <Attribute id="ent7#att24" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent7#att33" name="taskID" type="integer" db:column="taskid"/>
+    <Attribute id="ent7#att34" name="workerID" type="integer" db:column="workerid"/>
+  </Entity>
+  <Relationship id="rel10" name="Task_Excecution" sourceEntity="ent3" targetEntity="ent7" db:database="db1" db:table="task">
+    <RelationshipRole1 id="rel10#role19" name="TaskToExcecution" maxCard="1">
+      <db:JoinColumn attribute="ent3#att1" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel10#role20" name="ExcecutionToTask" maxCard="N">
+      <db:JoinColumn attribute="ent7#att24" name="excecution_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="210" gr:y="590" id="ent8" name="Item" duration="persistent" attributeOrder="ent8#att25 ent8#att26 ent8#att27 ent8#att28" db:database="db1" db:table="item">
+    <Attribute id="ent8#att25" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent8#att26" name="Title" type="string" db:column="title"/>
+    <Attribute id="ent8#att27" name="Caption" type="text" db:column="caption"/>
+    <Attribute id="ent8#att28" name="imageURL" type="url" db:column="imageurl"/>
+  </Entity>
+  <Relationship id="rel11" name="Excecution_Item" sourceEntity="ent7" targetEntity="ent8" db:database="db1" db:table="excecution_item">
+    <RelationshipRole1 id="rel11#role21" name="ExcecutionToItem" maxCard="N">
+      <db:JoinColumn attribute="ent7#att24" name="excecution_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel11#role22" name="ItemToExcecution" maxCard="N">
+      <db:JoinColumn attribute="ent8#att25" name="item_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel13" name="Worker_Excecution" sourceEntity="ent1" targetEntity="ent7" db:database="db1" db:table="worker">
+    <RelationshipRole1 id="rel13#role25" name="WorkerToExcecution" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="user_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel13#role26" name="ExcecutionToWorker" maxCard="N">
+      <db:JoinColumn attribute="ent7#att24" name="excecution_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="465" gr:y="585" id="ent9" name="Annotation" duration="persistent" attributeOrder="ent9#att29 ent9#att30 ent9#att31" db:database="db1" db:table="annotation">
+    <Attribute id="ent9#att29" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent9#att30" name="Label" type="string" db:column="label"/>
+    <Attribute id="ent9#att31" name="Confidence" type="integer" db:column="confidence"/>
+  </Entity>
+  <Relationship id="rel14" name="Excecution_Annotation" sourceEntity="ent7" targetEntity="ent9" db:database="db1" db:table="excecution">
+    <RelationshipRole1 id="rel14#role27" name="ExcecutionToAnnotation" maxCard="1">
+      <db:JoinColumn attribute="ent7#att24" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel14#role28" name="AnnotationToExcecution" maxCard="N">
+      <db:JoinColumn attribute="ent9#att29" name="annotation_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel15" name="Item_Annotation" sourceEntity="ent8" targetEntity="ent9" db:database="db1" db:table="item">
+    <RelationshipRole1 id="rel15#role29" name="ItemToAnnotation" maxCard="1">
+      <db:JoinColumn attribute="ent8#att25" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel15#role30" name="AnnotationToItem" maxCard="N">
+      <db:JoinColumn attribute="ent9#att29" name="annotation_oid"/>
     </RelationshipRole2>
   </Relationship>
 </DataModel>

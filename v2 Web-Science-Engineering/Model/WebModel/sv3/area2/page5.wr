@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="10" id="sv3#area2#page5" name="Create campaign" landmark="false">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="10" gr:y="10" id="sv3#area2#page5" name="Create campaign" landmark="false">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv3#area2#page5#enu2" name="Create campaign" linkOrder="sv3#area2#page5#enu2#ln11">
       <Field id="sv3#area2#page5#enu2#fld4" name="Name" type="string" modifiable="true"/>

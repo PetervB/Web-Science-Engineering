@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="Requester" protected="true" landmarks="sv3#lou2 sv3#area2 sv3#page8" homePage="sv3#area2#page7">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="Requester" protected="true" landmarks="sv3#area2 sv3#page8 sv3#lou2" homePage="sv3#area2#page7">
   <OperationUnits>
     <LogoutUnit id="sv3#lou2" name="Logout requester" landmark="true" gr:x="80" gr:y="-15" siteView="sv1"/>
     <CreateUnit gr:x="-65" gr:y="230" id="sv3#cru2" name="Create Campaign" entity="ent4">
@@ -13,5 +13,10 @@
       </Selector>
       <OKLink id="sv3#mfu2#oln5" name="OKFlow5" to="sv3#area2#page7" automaticCoupling="true" gr:bendpoints="-110,105,305,115;-178,108,237,118;-279,109,136,119"/>
     </ModifyUnit>
+    <CreateUnit gr:x="-50" gr:y="395" id="sv3#cru4" name="Create Task" entity="ent3">
+      <OKLink id="sv3#cru4#oln3" name="OKFlow3" to="sv3#area2#page4#dau2" gr:bendpoints="60,92,-350,72;172,93,-238,73;277,82,-133,62;323,81,-87,61">
+        <LinkParameter id="sv3#cru4#oln3#par43" name="CampaignID_CampaignID [oid]" source="ent3#att15Array" target="sv3#area2#page4#dau2#su2#kcond2.ent4#att9"/>
+      </OKLink>
+    </CreateUnit>
   </OperationUnits>
 </SiteView>
