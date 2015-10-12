@@ -1,0 +1,44 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="270" gr:y="290" id="sv1#page10" name="Register Worker">
+  <ContentUnits>
+    <EntryUnit id="sv1#page10#enu6" name="Register Worker" gr:x="0" gr:y="0" fieldOrder="sv1#page10#enu6#fld14 sv1#page10#enu6#fld17 sv1#page10#enu6#fld15 sv1#page10#enu6#fld16 sv1#page10#enu6#fld18" linkOrder="sv1#page10#enu6#ln23">
+      <Field id="sv1#page10#enu6#fld14" name="User name" type="string" modifiable="true"/>
+      <Field id="sv1#page10#enu6#fld15" name="Name" type="string" modifiable="true"/>
+      <Field id="sv1#page10#enu6#fld16" name="Email" type="string" modifiable="true"/>
+      <Field id="sv1#page10#enu6#fld17" name="Password" type="password" modifiable="true"/>
+      <Field id="sv1#page10#enu6#fld18" name="Birth date" type="date" modifiable="true"/>
+      <Link id="sv1#page10#enu6#ln23" name="Register" to="sv1#cru3" type="normal" validate="true">
+        <LinkParameter id="sv1#page10#enu6#ln23#par21" name="Birth date_BirthDate" source="sv1#page10#enu6#fld18" target="sv1#cru3.ent1#att3"/>
+        <LinkParameter id="sv1#page10#enu6#ln23#par22" name="Email_email" source="sv1#page10#enu6#fld16" target="sv1#cru3.email"/>
+        <LinkParameter id="sv1#page10#enu6#ln23#par24" name="Name_Name" source="sv1#page10#enu6#fld15" target="sv1#cru3.ent1#att2"/>
+        <LinkParameter id="sv1#page10#enu6#ln23#par25" name="Password_password" source="sv1#page10#enu6#fld17" target="sv1#cru3.password"/>
+        <LinkParameter id="sv1#page10#enu6#ln23#par26" name="User name_userName" source="sv1#page10#enu6#fld14" target="sv1#cru3.userName"/>
+        <LinkParameter id="sv1#page10#enu6#ln23#par27" name="1_Group.oid(defaultGroup)" sourceValue="1" target="sv1#cru3.User2DefaultGroup.groupOID"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page10#enu6">
+          <layout:Field field="sv1#page10#enu6#fld14"/>
+          <layout:Field field="sv1#page10#enu6#fld17"/>
+          <layout:Field field="sv1#page10#enu6#fld15"/>
+          <layout:Field field="sv1#page10#enu6#fld16"/>
+          <layout:Field field="sv1#page10#enu6#fld18"/>
+          <layout:Link link="sv1#page10#enu6#ln23"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
