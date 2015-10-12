@@ -1,0 +1,66 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="225" gr:y="180" id="sv3#area2#page4" name="Campaign page" protected="false" linkVisibilityPolicy="hide">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv3#area2#page4#dau2" name="CampaignDetails" entity="ent4" displayAttributes="ent4#att10 ent4#att11 ent4#att12 ent4#att14" linkOrder="sv3#area2#page4#dau2#ln9">
+      <Selector id="sv3#area2#page4#dau2#su2" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#page4#dau2#su2#kcond2" name="CampaignID" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area2#page4#dau2#ln9" name="Create new task" to="sv3#area2#page6#enu4" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#page4#dau2#ln9#par41" name="oid_CampaignID" source="data.ent4#att9" target="sv3#area2#page6#enu4#fld21_slot"/>
+      </Link>
+      <Link id="sv3#area2#page4#dau2#ln28" name="CampaignID" to="sv3#area2#page4#pwu1" type="transport" validate="true">
+        <LinkParameter id="sv3#area2#page4#dau2#ln28#par42" name="oid_AttCondition5" source="data.ent4#att9" target="sv3#area2#page4#pwu1#su10#acond5"/>
+      </Link>
+    </DataUnit>
+    <PowerIndexUnit gr:x="155" gr:y="0" id="sv3#area2#page4#pwu1" name="Campaign Task List" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att4 ent3#att5 ent3#att8 ent3#att13 ent3#att16">
+      <Selector id="sv3#area2#page4#pwu1#su10" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#page4#pwu1#su10#acond5" name="CampaignID" predicate="eq" booleanOperator="or" implied="false" attributes="ent3#att15"/>
+      </Selector>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page4#dau2">
+          <layout:Attribute attribute="ent4#att10"/>
+          <layout:Attribute attribute="ent4#att11"/>
+          <layout:Attribute attribute="ent4#att12"/>
+          <layout:Attribute attribute="ent4#att14"/>
+          <layout:Link link="sv3#area2#page4#dau2#ln9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page4#pwu1">
+          <layout:Attribute attribute="ent3#att4"/>
+          <layout:Attribute attribute="ent3#att5"/>
+          <layout:Attribute attribute="ent3#att8"/>
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="ent3#att16"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,49 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="190" gr:y="0" id="sv3#area2#page7" name="Campaign overview" linkOrder="sv3#area2#page7#ln10" landmark="true">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv3#area2#page7#pwu2" name="Campaigns" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att10 ent4#att11 ent4#att12" linkOrder="sv3#area2#page7#pwu2#ln4 sv3#area2#page7#pwu2#ln2">
+      <Link id="sv3#area2#page7#pwu2#ln4" name="Open/close campaign" to="sv3#area2#page3#enu3" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#page7#pwu2#ln4#par19" name="oid_Key Condition [oid]" source="data[].ent4#att9" target="sv3#area2#page3#enu3.ent4#att9"/>
+      </Link>
+      <Link id="sv3#area2#page7#pwu2#ln2" name="View Tasks" to="sv3#area2#page4#dau2" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page7#pwu2">
+          <layout:Attribute attribute="ent4#att10"/>
+          <layout:Attribute attribute="ent4#att11"/>
+          <layout:Attribute attribute="ent4#att12"/>
+          <layout:Link link="sv3#area2#page7#pwu2#ln4"/>
+          <layout:Link link="sv3#area2#page7#pwu2#ln2"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#area2#page7#ln10" name="Start new campaign" to="sv3#area2#page5" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

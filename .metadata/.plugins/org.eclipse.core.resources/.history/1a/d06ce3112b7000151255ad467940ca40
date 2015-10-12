@@ -1,0 +1,56 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="225" gr:y="340" id="sv3#area2#page9" name="Task page">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv3#area2#page9#dau4" name="TaskDetails" entity="ent3" displayAttributes="ent3#att4 ent3#att5 ent3#att8 ent3#att13">
+      <Selector id="sv3#area2#page9#dau4#su11" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#page9#dau4#su11#kcond7" name="TaskID" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area2#page9#dau4#ln36" name="TaskID" to="sv3#area2#page9#pwu3" type="transport" validate="true">
+        <LinkParameter id="sv3#area2#page9#dau4#ln36#par55" name="oid_taskID" source="data.ent3#att1" target="sv3#area2#page9#pwu3#su13#acond8"/>
+      </Link>
+    </DataUnit>
+    <PowerIndexUnit gr:x="120" gr:y="5" id="sv3#area2#page9#pwu3" name="Task Execution List" sortable="true" checkable="false" useCountQuery="false" entity="ent7">
+      <Selector id="sv3#area2#page9#pwu3#su13" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area2#page9#pwu3#su13#acond8" name="taskID" predicate="eq" booleanOperator="or" implied="false"/>
+      </Selector>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page9#dau4">
+          <layout:Attribute attribute="ent3#att4"/>
+          <layout:Attribute attribute="ent3#att5"/>
+          <layout:Attribute attribute="ent3#att8"/>
+          <layout:Attribute attribute="ent3#att13"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page9#pwu3"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
