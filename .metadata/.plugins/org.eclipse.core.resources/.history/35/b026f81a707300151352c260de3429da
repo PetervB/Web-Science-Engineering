@@ -18,5 +18,8 @@
         <LinkParameter id="sv3#cru4#oln3#par43" name="CampaignID_CampaignID [oid]" source="ent3#att15Array" target="sv3#area2#page4#dau2#su2#kcond2.ent4#att9"/>
       </OKLink>
     </CreateUnit>
+    <CreateUnit gr:x="-55" gr:y="600" id="sv3#cru5" name="Create Item" entity="ent8">
+      <OKLink id="sv3#cru5#oln6" name="OKFlow6" to="sv3#area2#page9" automaticCoupling="true" gr:bendpoints="117,85,-348,115;257,91,-208,121;319,69,-146,99"/>
+    </CreateUnit>
   </OperationUnits>
 </SiteView>
