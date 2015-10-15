@@ -1,0 +1,27 @@
+[11 Oct 2015 16:48:16] DEBUG Executing SQL script
+[11 Oct 2015 16:48:16] INFO ================================================================================
+[11 Oct 2015 16:48:16] INFO outputPath= '/Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/.Temp~/UpdateSQL.xml'
+[11 Oct 2015 16:48:16] INFO onError= 'stop'
+[11 Oct 2015 16:48:16] INFO statementSeparator= ';'
+[11 Oct 2015 16:48:16] INFO derby.system.home= '/Users/Hao/Desktop/Web Science/Web-Science-Engineering/.metadata/.plugins/com.webratio.commons.db/derby'
+[11 Oct 2015 16:48:16] INFO password= ''
+[11 Oct 2015 16:48:16] INFO url= 'jdbc:postgresql://localhost:5432/ImageAnnotationTool'
+[11 Oct 2015 16:48:16] INFO username= 'Hao'
+[11 Oct 2015 16:48:16] INFO autoCommit= 'false'
+[11 Oct 2015 16:48:16] INFO outputLogPath= '/Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/.Temp~/UpdateSQL.xml.log'
+[11 Oct 2015 16:48:16] INFO driverClass= 'org.postgresql.Driver'
+[11 Oct 2015 16:48:16] INFO encoding= ''
+[11 Oct 2015 16:48:16] INFO eventSocketPort= '55928'
+[11 Oct 2015 16:48:16] INFO sqlScript= '/Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/.Temp~/UpdateSQL.sql'
+[11 Oct 2015 16:48:16] INFO ================================================================================
+[11 Oct 2015 16:48:16] INFO Connecting to the Database...
+[11 Oct 2015 16:48:16] INFO Database connection estabilished
+[11 Oct 2015 16:48:16] INFO transaction isolation: 2
+[11 Oct 2015 16:48:16] DEBUG ================================================================================
+[11 Oct 2015 16:48:16] DEBUG Executing SQL script file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/.Temp~/UpdateSQL.sql
+[11 Oct 2015 16:48:16] DEBUG Executing statement:  alter table "public"."excecution"  add column  "taskid"  int4
+[11 Oct 2015 16:48:16] DEBUG Executing statement:  alter table "public"."excecution"  add column  "workerid"  int4
+[11 Oct 2015 16:48:16] DEBUG ================================================================================
+[11 Oct 2015 16:48:16] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[11 Oct 2015 16:48:16] INFO Database connection closed
+[11 Oct 2015 16:48:16] DEBUG Total time: 171 milliseconds

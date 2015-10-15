@@ -1,0 +1,141 @@
+[11 Oct 2015 16:48:17] Building database metadata model
+[11 Oct 2015 16:48:17] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@1572e449, includeTables=true, username=Hao, outputLogPath=/Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/.Temp~/DB.xml.log, readIndexes=null, driverClass=org.postgresql.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.PostgreSQLMetaDataProvider, outputPath=/Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/.Temp~/DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=/Users/Hao/Desktop/Web Science/Web-Science-Engineering/.metadata/.plugins/com.webratio.commons.db/derby, url=jdbc:postgresql://localhost:5432/ImageAnnotationTool, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=55933}
+[11 Oct 2015 16:48:17] URL: jdbc:postgresql://localhost:5432/ImageAnnotationTool
+[11 Oct 2015 16:48:17] Product name: PostgreSQL
+[11 Oct 2015 16:48:17] Product version: 9.4.4
+[11 Oct 2015 16:48:17] Driver name: PostgreSQL Native Driver
+[11 Oct 2015 16:48:17] Driver version: PostgreSQL 9.3 JDBC3g (build 1103)
+[11 Oct 2015 16:48:17] Driver major version: 9
+[11 Oct 2015 16:48:17] Driver minor version: 3
+[11 Oct 2015 16:48:17] Identifier quote string: 3
+[11 Oct 2015 16:48:17] Retrieving schemas
+[11 Oct 2015 16:48:17]   Found schema: information_schema
+[11 Oct 2015 16:48:17]   Found schema: pg_catalog
+[11 Oct 2015 16:48:17]   Found schema: public
+[11 Oct 2015 16:48:17] Retrieving sequences
+[11 Oct 2015 16:48:17] Retrieving [TABLE, VIEW, SYNONYM] for schema 'information_schema'
+[11 Oct 2015 16:48:17] Retrieving [TABLE, VIEW, SYNONYM] for schema 'pg_catalog'
+[11 Oct 2015 16:48:17] Retrieving [TABLE, VIEW, SYNONYM] for schema 'public'
+[11 Oct 2015 16:48:17]   Found 'public.annotation' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.campaign' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.excecution' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.excecution_item' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.group' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.group_module' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.item' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.module' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.requester' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.skill' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.skill_set' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.task' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.user' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.user_group' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found 'public.worker' [type = TABLE]
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.annotation' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: label [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: confidence [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.annotation' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.campaign' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: name [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: budget [type = numeric][SQL/XOPEN type = 2][size = 19][dec. digits = 2]
+[11 Oct 2015 16:48:17]   Found column: status [type = bool][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: requester_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: open [type = bool][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: task_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.campaign' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.excecution' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: annotation_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: taskid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: workerid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.excecution' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.excecution_item' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: excecution_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: item_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.excecution_item' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: excecution_oid
+[11 Oct 2015 16:48:17]   Found primary key column: item_oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.group' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: groupname [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.group' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.group_module' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: module_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.group_module' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: group_oid
+[11 Oct 2015 16:48:17]   Found primary key column: module_oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.item' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: title [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: caption [type = text][SQL/XOPEN type = 12][size = 2147483647][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: imageurl [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: annotation_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.item' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.module' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: moduleid [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: modulename [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.module' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.requester' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: name [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: birthdate [type = date][SQL/XOPEN type = 91][size = 13][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.requester' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: user_oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.skill' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: skill_name [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.skill' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.skill_set' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: skill_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: task_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.skill_set' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.task' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: title [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: description [type = text][SQL/XOPEN type = 12][size = 2147483647][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: reward [type = float8][SQL/XOPEN type = 8][size = 17][dec. digits = 17]
+[11 Oct 2015 16:48:17]   Found column: deadline [type = date][SQL/XOPEN type = 91][size = 13][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: campaignid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: status [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: skill_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: skill_oid_2 [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: excecution_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.task' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.user' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: username [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: password [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: email [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.user' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.user_group' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: group_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.user_group' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: user_oid
+[11 Oct 2015 16:48:17]   Found primary key column: group_oid
+[11 Oct 2015 16:48:17] Retrieving columns for 'public.worker' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found column: user_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: name [type = varchar][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: birthdate [type = date][SQL/XOPEN type = 91][size = 13][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: skill_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17]   Found column: excecution_oid [type = int4][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[11 Oct 2015 16:48:17] Retrieving primary keys for 'public.worker' [type = TABLE]
+[11 Oct 2015 16:48:17]   Found primary key column: user_oid
+[11 Oct 2015 16:48:17] Database connection closed
