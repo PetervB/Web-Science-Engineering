@@ -1,0 +1,54 @@
+
+<Warnings>
+
+<Warning xpath="id('sv2#area1#page18#inu3#ln48#par79')" rootXPath="id('sv2')" error="true" label="oid_current oid" key="UNKNOWN_INPUT_OUTPUT_PARAMETER">
+            <Message>The parameter binding 'oid_current oid' references an input parameter 'sv2#area1#page21#inu4.current.ent9#att29' not provided by the flow's target</Message>
+            <Resolution 
+                class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter</Resolution>
+          </Warning>
+        <Warning xpath="id('sv2#mfu4#oln7')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Task Claimed!">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Task Claimed!'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    	<Warning xpath="id('sv2#lou1')" rootXPath="id('sv2')" error="false" label="Logout worker" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Logout worker'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#mfu4')" rootXPath="id('sv2')" error="false" label="Confirm" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Confirm'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#cru6')" rootXPath="id('sv2')" error="false" label="Create Annotation" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Create Annotation'</Message>
+        </Warning>
+    
+
+
+  <Warning error="false" xpath="id('sv2#area1#page2#pwu5')" rootXPath="id(&apos;sv2&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Open Tasks to Claim">
+    <Message>Sorting attribute are unspecified for the component &apos;Open Tasks to Claim&apos;</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv2#area1#page2#pwu5#su12#acond3')" rootXPath="id('sv2')" key="NOT_EQUAL_PREDICATE_WITH_OR" label="TasksOpen">
+    <Message>Invalid combination of predicate &apos;Not Equal&apos; and boolean operator &apos;Or&apos; for the condition &apos;TasksOpen&apos;</Message>
+    <Resolution message="Set boolean operator to &apos;and&apos;" class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="booleanOperator" value="and" >Set boolean operator to &apos;and&apos;</Resolution>
+  </Warning> 
+  <Warning error="true" xpath="id('sv2#area1#page2#pwu5#su12#acond3')" rootXPath="id(&apos;sv2&apos;)" key="" label="TasksOpen">
+    <Message>Invalid value &apos;1&apos; specified for the condition &apos;TasksOpen&apos;: &apos;true&apos; or &apos;false&apos; must be specified</Message>
+  </Warning> 
+
+  <Warning error="false" xpath="id('sv2#area1#page2#inu1')" rootXPath="id(&apos;sv2&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Claimed Task List">
+    <Message>Sorting attribute are unspecified for the component &apos;Claimed Task List&apos;</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv2#area1#page17#enu11#fld28')" rootXPath="id('sv2')" key="HIDDEN_FIELD_MODIFIABLE" label="UserID">
+    <Message>The hidden field &apos;UserID&apos; shouldn&apos;t be modifiable</Message>
+    <Resolution message="Set the field to not modifiable" class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="modifiable" value="false" >Set the field to not modifiable</Resolution>
+  </Warning> 
+
+  <Warning error="false" xpath="id('sv2#area1#page18#inu3')" rootXPath="id(&apos;sv2&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Items to Annotate">
+    <Message>Sorting attribute are unspecified for the component &apos;Items to Annotate&apos;</Message>
+  </Warning> 
+
+  <Warning error="false" xpath="id('sv2#area1#page21#inu4')" rootXPath="id(&apos;sv2&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="List of Annotations">
+    <Message>Sorting attribute are unspecified for the component &apos;List of Annotations&apos;</Message>
+  </Warning> 
+</Warnings>

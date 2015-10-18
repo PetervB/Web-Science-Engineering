@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.webratio.ide.ui.dialogs.EditEntryUnitDialog">
+		<item value="1254" key="DIALOG_WIDTH"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+		<item value="777" key="DIALOG_HEIGHT"/>
+		<item value="0" key="DIALOG_X_ORIGIN"/>
+		<item value="1|.Helvetica Neue DeskInterface|13.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="DialogBounds_ExceptionDialog">
+		<item value="595" key="DIALOG_WIDTH"/>
+		<item value="741" key="DIALOG_WIDTH.DETAILS"/>
+		<item value="257" key="DIALOG_X_ORIGIN.DETAILS"/>
+		<item value="286" key="DIALOG_Y_ORIGIN"/>
+		<item value="154" key="DIALOG_HEIGHT"/>
+		<item value="330" key="DIALOG_X_ORIGIN"/>
+		<item value="597" key="DIALOG_HEIGHT.DETAILS"/>
+		<item value="0" key="DIALOG_Y_ORIGIN.DETAILS"/>
+	</section>
+	<section name="com.webratio.ide.ui.properties.items.EntityPropertyItem$2.DialogSettings">
+	</section>
+</section>
