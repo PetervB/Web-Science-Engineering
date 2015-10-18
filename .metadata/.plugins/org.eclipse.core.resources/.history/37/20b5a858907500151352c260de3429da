@@ -1,0 +1,11 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="worker" protected="true" landmarks="sv2#lou1 sv2#area1" homePage="sv2#area1#page2">
+  <OperationUnits>
+    <LogoutUnit gr:x="725" gr:y="10" id="sv2#lou1" name="Logout worker" siteView="sv1" landmark="true"/>
+    <ModifyUnit gr:x="780" gr:y="170" id="sv2#mfu4" name="Confirm" entity="ent3">
+      <Selector id="sv2#mfu4#su13" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#mfu4#su13#kcond9" name="KeyCondition9" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#mfu4#oln7" name="OKFlow7" to="sv2#area1#page2#dau1" automaticCoupling="true" gr:bendpoints="-49,-178,316,-133;-335,-177,30,-132"/>
+    </ModifyUnit>
+  </OperationUnits>
+</SiteView>

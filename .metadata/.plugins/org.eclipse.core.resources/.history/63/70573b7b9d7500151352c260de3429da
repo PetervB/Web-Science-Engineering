@@ -1,0 +1,31 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="240" gr:y="505" id="sv3#area2#page24" name="Accept Task">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv3#area2#page24#enu14" name="Are you sure to close the task and pay the worker?" entity="ent3">
+      <Field id="sv3#area2#page24#enu14#fld32" name="Accept" type="string" modifiable="true"/>
+      <Field id="sv3#area2#page24#enu14#fld33" name="taskid" type="string" modifiable="true"/>
+      <Field id="sv3#area2#page24#enu14#fld34" name="workerID" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page24#enu14">
+          <layout:Field field="sv3#area2#page24#enu14#fld32"/>
+          <layout:Field field="sv3#area2#page24#enu14#fld33"/>
+          <layout:Field field="sv3#area2#page24#enu14#fld34"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

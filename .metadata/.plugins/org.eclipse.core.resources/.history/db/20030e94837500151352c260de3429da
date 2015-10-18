@@ -1,0 +1,10 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="worker" protected="true" landmarks="sv2#lou1 sv2#area1" homePage="sv2#area1#page2">
+  <OperationUnits>
+    <LogoutUnit gr:x="725" gr:y="10" id="sv2#lou1" name="Logout worker" siteView="sv1" landmark="true"/>
+    <ModifyUnit gr:x="745" gr:y="240" id="sv2#mfu3" name="Claim Task" entity="ent3">
+      <Selector id="sv2#mfu3#su7" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#mfu3#su7#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+  </OperationUnits>
+</SiteView>

@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="210" gr:y="305" id="sv2#area1#page19" name="Annotation">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area1#page19#enu13" name="Create Annotation" entity="ent9" linkOrder="sv2#area1#page19#enu13#ln47">
+      <Field id="sv2#area1#page19#enu13#fld29" name="Label" type="string" modifiable="true" attribute="ent9#att30"/>
+      <Field id="sv2#area1#page19#enu13#fld30" name="Confidence [between 1-5]" type="integer" modifiable="true" attribute="ent9#att31"/>
+      <Field id="sv2#area1#page19#enu13#fld31" name="ItemID" type="integer" modifiable="false" hidden="true" attribute="ent9#att20" preloaded="true"/>
+      <Link id="sv2#area1#page19#enu13#ln47" name="Create Annotation" to="sv2#cru6" type="normal" validate="true">
+        <LinkParameter id="sv2#area1#page19#enu13#ln47#par72" name="Annotation Object_Annotation Object" source="entityBean" target="sv2#cru6.entityBeans"/>
+        <LinkParameter id="sv2#area1#page19#enu13#ln47#par73" name="Confidence_Confidence" source="sv2#area1#page19#enu13#fld30" target="sv2#cru6.ent9#att31"/>
+        <LinkParameter id="sv2#area1#page19#enu13#ln47#par74" name="Label_Label" source="sv2#area1#page19#enu13#fld29" target="sv2#cru6.ent9#att30"/>
+        <LinkParameter id="sv2#area1#page19#enu13#ln47#par75" name="ItemID_ItemId" source="sv2#area1#page19#enu13#fld31" target="sv2#cru6.ent9#att20"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page19#enu13">
+          <layout:Field field="sv2#area1#page19#enu13#fld29"/>
+          <layout:Field field="sv2#area1#page19#enu13#fld30"/>
+          <layout:Link link="sv2#area1#page19#enu13#ln47"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

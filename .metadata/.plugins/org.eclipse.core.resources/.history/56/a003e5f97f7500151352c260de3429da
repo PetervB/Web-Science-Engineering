@@ -1,0 +1,33 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="275" gr:y="5" id="sv2#area1#page12" name="Open Tasks" landmark="true">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv2#area1#page12#pwu4" name="Open Tasks" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att4 ent3#att5 ent3#att13 ent3#att23 ent3#att22">
+      <Selector id="sv2#area1#page12#pwu4#su5" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#area1#page12#pwu4#su5#acond2" name="TasksOpen" predicate="null" booleanOperator="or" implied="false" attributes="ent3#att22"/>
+      </Selector>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page12#pwu4">
+          <layout:Attribute attribute="ent3#att4"/>
+          <layout:Attribute attribute="ent3#att5"/>
+          <layout:Attribute attribute="ent3#att13"/>
+          <layout:Attribute attribute="ent3#att23"/>
+          <layout:Attribute attribute="ent3#att22"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

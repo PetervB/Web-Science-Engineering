@@ -1,0 +1,35 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area1#page17" name="Are you sure?" gr:x="375" gr:y="75">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area1#page17#enu11" name="Claim Task" entity="ent3" linkOrder="sv2#area1#page17#enu11#ln32">
+      <Field id="sv2#area1#page17#enu11#fld27" name="Tasks" type="integer" modifiable="false" attribute="ent3#att1"/>
+      <Field id="sv2#area1#page17#enu11#fld28" name="UserID" type="string" modifiable="true"/>
+      <Link id="sv2#area1#page17#enu11#ln32" name="Confirm" to="sv2#mfu4" type="normal" validate="true">
+        <LinkParameter id="sv2#area1#page17#enu11#ln32#par54" name="Key [oid]_KeyCondition9 [oid]" source="key.ent3#att1" target="sv2#mfu4#su13#kcond9.ent3#att1"/>
+        <LinkParameter id="sv2#area1#page17#enu11#ln32#par55" name="Task Object_Task Object" source="entityBean" target="sv2#mfu4.entityBeans"/>
+        <LinkParameter id="sv2#area1#page17#enu11#ln32#par56" name="UserID_workerId" source="sv2#area1#page17#enu11#fld28" target="sv2#mfu4.ent3#att14"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area1#page17#enu11">
+          <layout:Field field="sv2#area1#page17#enu11#fld27"/>
+          <layout:Field field="sv2#area1#page17#enu11#fld28"/>
+          <layout:Link link="sv2#area1#page17#enu11#ln32"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

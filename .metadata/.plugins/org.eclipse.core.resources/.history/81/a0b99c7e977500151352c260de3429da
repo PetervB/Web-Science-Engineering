@@ -1,0 +1,25 @@
+
+<Warnings>
+<Warning xpath="id('ent3#att23')" rootXPath="/WebProject/DataModel" error="true" label="reward" key="DUPLICATED_FIELD_NAME">
+        <Message>The Java field name 'reward' is duplicated, therefore producing colliding Java methods</Message>
+        <Resolution 
+    	    class="com.webratio.ide.ui.resources.FixFieldNameResolutionGenerator">Rename the element to avoid Java field name duplication</Resolution>
+     	</Warning><Warning xpath="id('ent3#att34')" rootXPath="/WebProject/DataModel" error="true" label="reward" key="DUPLICATED_FIELD_NAME">
+        <Message>The Java field name 'reward' is duplicated, therefore producing colliding Java methods</Message>
+        <Resolution 
+    	    class="com.webratio.ide.ui.resources.FixFieldNameResolutionGenerator">Rename the element to avoid Java field name duplication</Resolution>
+     	</Warning><Warning xpath="id('rel4')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="TaskToItem" key="INVALID_JOIN_COLUMN">
+            <Message>The join column 'task_oid' of the target relationship role 'TaskToItem' is not valid</Message>
+            <Resolution 
+      			class="com.webratio.ide.ui.resources.RemoveJoinColumnResolutionGenerator"
+      			roleId="rel4#role8"
+      			columnName="task_oid">Remove the invalid join column 'task_oid'</Resolution>
+        </Warning><Warning xpath="id('rel4')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="TaskToItem" key="INVALID_JOIN_COLUMN">
+            <Message>The join column 'task_oid' of the relationship role 'TaskToItem' is not a key attribute column</Message>
+            <Resolution 
+      			class="com.webratio.ide.ui.resources.RemoveJoinColumnResolutionGenerator"
+      			roleId="rel4#role8"
+      			columnName="task_oid">Remove the invalid join column 'task_oid'</Resolution>
+        </Warning>
+
+</Warnings>

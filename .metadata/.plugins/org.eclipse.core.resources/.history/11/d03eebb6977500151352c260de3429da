@@ -1,0 +1,16 @@
+
+<Warnings>
+<Warning xpath="id('rel4')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="TaskToItem" key="INVALID_JOIN_COLUMN">
+            <Message>The join column 'task_oid' of the target relationship role 'TaskToItem' is not valid</Message>
+            <Resolution 
+      			class="com.webratio.ide.ui.resources.RemoveJoinColumnResolutionGenerator"
+      			roleId="rel4#role8"
+      			columnName="task_oid">Remove the invalid join column 'task_oid'</Resolution>
+        </Warning><Warning xpath="id('rel4#role8')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="TaskToItem" key="REQUIRED_MAX_CARD_ONE">
+				      <Message>The relationship role 'TaskToItem' must have maximun cardinality equals to one</Message>
+				      <Resolution 
+	                    class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	                    attribute="maxCard" value="1">Set maximun cardinality to one</Resolution>
+				  </Warning>
+
+</Warnings>
