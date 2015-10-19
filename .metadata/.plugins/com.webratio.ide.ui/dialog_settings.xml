@@ -7,8 +7,8 @@
 	<section name="DialogBounds_CouplingDialog">
 		<item value="660" key="DIALOG_WIDTH"/>
 		<item value="0" key="DIALOG_Y_ORIGIN"/>
-		<item value="634" key="DIALOG_HEIGHT"/>
 		<item value="297" key="DIALOG_X_ORIGIN"/>
+		<item value="634" key="DIALOG_HEIGHT"/>
 		<item value="1|.Helvetica Neue DeskInterface|13.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="DatabaseMissingJarsDialog.FileDialog">

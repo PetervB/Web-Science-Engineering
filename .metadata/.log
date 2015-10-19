@@ -379,3 +379,463 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/Hao/.
 
 !ENTRY org.eclipse.core.net 1 0 2015-10-19 09:30:46.948
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2015-10-19 09:42:05.249 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/Hao/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/Hao/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-10-19 09:42:08.900
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 0 2015-10-19 09:43:24.618
+!MESSAGE Unable to create editor ID com.webratio.ide.ui.editors.WebProjectEditor: Not a valid Web Project
+!STACK 1
+org.eclipse.ui.PartInitException: Not a valid Web Project
+!SUBENTRY 1 com.webratio.ide.ui 4 4 2015-10-19 09:43:24.618
+!MESSAGE Not a valid Web Project
+
+!ENTRY org.eclipse.ui 2 2 2015-10-19 09:43:24.628
+!MESSAGE Ignored attempt to add saveable that was already registered
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse.ui.internal.DefaultSaveable@4b0a35db from part: org.eclipse.ui.internal.ErrorEditorPart@4b0a35db
+	at org.eclipse.ui.internal.SaveablesList.logWarning(SaveablesList.java:187)
+	at org.eclipse.ui.internal.SaveablesList.addModel(SaveablesList.java:117)
+	at org.eclipse.ui.internal.SaveablesList.addModels(SaveablesList.java:289)
+	at org.eclipse.ui.internal.SaveablesList.postOpen(SaveablesList.java:684)
+	at org.eclipse.ui.internal.PartList.partOpened(PartList.java:234)
+	at org.eclipse.ui.internal.PartList.access$0(PartList.java:210)
+	at org.eclipse.ui.internal.PartList$1.propertyChanged(PartList.java:40)
+	at org.eclipse.ui.internal.WorkbenchPartReference.fireInternalPropertyChange(WorkbenchPartReference.java:375)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:610)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:313)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:180)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:270)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:473)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1254)
+	at org.eclipse.ui.internal.PartStack.setSelection(PartStack.java:1207)
+	at org.eclipse.ui.internal.PartStack.presentationSelectionChanged(PartStack.java:841)
+	at org.eclipse.ui.internal.PartStack.access$1(PartStack.java:827)
+	at org.eclipse.ui.internal.PartStack$1.selectPart(PartStack.java:137)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation$1.handleEvent(TabbedStackPresentation.java:133)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:269)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:278)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder.access$1(DefaultTabFolder.java:1)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder$2.handleEvent(DefaultTabFolder.java:88)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3783)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1375)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1398)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1383)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1195)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:2743)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1429)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:257)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3783)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1375)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1398)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1383)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1195)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3629)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3284)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+
+!ENTRY org.eclipse.core.resources 4 566 2015-10-19 09:43:53.758
+!MESSAGE Problems encountered while copying resources.
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.758
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.metadata/.plugins/com.webratio.commons.startup/WebRatio7-acadt-22622-71080-50777.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.758
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.metadata/.plugins/com.webratio.commons.startup/WebRatio7-acadt-22643-82507-53132.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.758
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.758
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.758
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.758
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.759
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.Temp~/.deployPath.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.759
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.Temp~/DB.xml.log.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.759
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.Temp~/Generation.xml.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.759
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.Temp~/UpdateSQL.sql.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.759
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.Temp~/UpdateSQL.xml.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.759
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.Temp~/Warnings.xml.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.759
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.metadata/.lock.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.759
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.metadata/.log.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.759
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.metadata/version.ini.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.760
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2015-10-19 09:43:53.760
+!MESSAGE Could not read file: /Users/Hao/Desktop/Web Science/Web-Science-Engineering/ImageAnnotationTool/v2 Web-Science-Engineering/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/ImageAnnotationTool/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes.
+!STACK 0
+java.io.IOException: File name too long
+	at java.io.UnixFileSystem.canonicalize0(Native Method)
+	at java.io.UnixFileSystem.canonicalize(UnixFileSystem.java:157)
+	at java.io.File.getCanonicalPath(File.java:559)
+	at java.io.File.getCanonicalFile(File.java:583)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.copy(LocalFile.java:101)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copyContents(CopyVisitor.java:100)
+	at org.eclipse.core.internal.localstore.CopyVisitor.copy(CopyVisitor.java:71)
+	at org.eclipse.core.internal.localstore.CopyVisitor.visit(CopyVisitor.java:202)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:108)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:229)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:548)
+	at org.eclipse.core.internal.resources.Project.internalCopy(Project.java:653)
+	at org.eclipse.core.internal.resources.Project.copy(Project.java:236)
+	at com.webratio.commons.mf.ui.actions.CopyMFProjectAction$1.execute(CopyMFProjectAction.java:107)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1975)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
